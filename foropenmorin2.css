@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    */overflow: hidden;
+}
+
+.bimage {
+    pointer-events: none;
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    filter: blur(0px);
+}
+
+.cats {
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 80px;
+    justify-content: center;
+    display: flex;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.cat1 {
+    height: 350px;
+    width: 350px;
+    margin-right: 40px;
+    border: 7px solid rgb(108, 108, 211);
+    border-radius: 30%;
+    transition: transform 0.5s;
+    box-shadow: 0px 0px 30px 10px black;
+    background-attachment: fixed;
+    object-fit: cover;
+
+}
+
+.cat2 {
+    height: 350px;
+    width: 350px;
+    margin-left: 40px;
+    border: 7px solid rgb(108, 108, 211);
+    border-radius: 30%;
+    transition: transform 0.5s;
+    box-shadow: 0px 0px 30px 10px black;
+    background-attachment: fixed;
+}
+
+.isaac{
+    position: relative;
+    visibility: hidden;
+    margin: 0px;
+    height: 90px;
+    width: 90px;
+    box-shadow: 0px 0px 20px 3px rgb(0, 0, 0);
+    left: 280px;
+    transition: transform 0.3s ease-in;
+    background-color: antiquewhite;
+    top: 150px;
+    text-align: justify;
+    border: 1px solid rgb(67, 65, 87);
+    border-radius: 10px;
+    background: slategray;
+    
+}
+
+.karc{
+    position: relative;
+    visibility: hidden;
+    margin: 0px;
+    height: 90px;
+    width: 90px;
+    box-shadow: 0px 0px 20px 3px rgb(0, 0, 0);
+    left: -750px;
+    transition: transform 0.3s ease-in;
+    background-color: antiquewhite;
+    top: 150px;
+    text-align: justify;
+    border: 1px solid rgb(67, 65, 87);
+    border-radius: 10px;
+    background: slategray;
+    
+}
+
+.nickname {
+    font-size: 3px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.head{
+    font-size: 6px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cat1:hover {
+    transform: scale(1.2);
+    border: 7px solid rgb(46, 46, 209);
+}
+
+.cat2:hover {
+    transform: scale(1.2);
+    border: 7px solid rgb(46, 46, 209);
+}
+
+.cat1:hover ~ .isaac {
+    visibility: visible;
+    transform: scale(6);
+    z-index: 1;
+}
+
+.cat2:hover ~ .karc {
+    visibility: visible;
+    transform: scale(6);
+    z-index: 1;
+}
+
+
+nav {
+    background: rgb(67, 65, 87);
+    box-shadow: 0px 0px 30px 10px black;
+    height: 80px;
+    width: 100%;
+}
+
+
+.logo {
+    color: rgb(176, 179, 185);
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.HIDDEN_MESSAGE{
+    visibility: hidden;
+    text-align: center;
+    justify-content: center;
+    margin-top: -300px;
+    font-size: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.b4hidden {
+    visibility: hidden;
+    text-align: center;
+    justify-content: center;
+    margin-top: -150px;
+    font-size: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 1295px) {
+    .cat1 {
+        height: 300px;
+        width: 300px;
+    }
+
+    .cat2{
+        height: 300px;
+        width: 300px;
+    }
+
+    .isaac {
+        height: 75px;
+        width: 75px;
+        left: 250px;
+        top: 100px;
+    }
+    .karc{
+        height: 75px;
+        width: 75px;
+        left: -650px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 1252px) {
+    .cat1 {
+        height: 300px;
+        width: 300px;
+    }
+
+    .cat2{
+        height: 300px;
+        width: 300px;
+    }
+
+    .isaac {
+        height: 75px;
+        width: 75px;
+        left: 250px;
+        top: 100px;
+    }
+    .karc{
+        height: 75px;
+        width: 75px;
+        left: -650px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 952px) {
+    .cat1 {
+        height: 250px;
+        width: 250px;
+    }
+
+    .cat2{
+        height: 250px;
+        width: 250px;
+    }
+
+    .isaac {
+        height: 60px;
+        width: 60px;
+        left: 200px;
+    }
+
+    .karc {
+        height: 60px;
+        width: 60px;
+        left: -550px;
+    }
+}
+
+@media (max-width: 892px) {
+    .cat1 {
+        visibility: hidden;
+    }
+
+    .cat2{
+        visibility: hidden;
+    }
+
+    .b4hidden {
+        visibility: visible;
+    }
+}
+
+@media (max-width:712px) {
+    .cat1 {
+        visibility: hidden;
+    }
+
+    .cat2{
+        visibility: hidden;
+    }
+
+    .b4hidden {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .HIDDEN_MESSAGE {
+        visibility: visible;
+    }
+}
